@@ -434,12 +434,32 @@ h4 {
 	width: 200px;
 }
 
+#valentina-image {
+	background: url('../media/valentina-photo.jpg');
+	/*background-size: 200px 300px;*/
+	background-repeat: no-repeat;	
+	background-position: center;
+	background-size: 200px;
+	height: 200px;
+	width: 200px;
+}
+
+#missing-photo-image {
+	background: url('../media/missing-photo-man.png');
+	/*background-size: 200px 300px;*/
+	background-repeat: no-repeat;	
+	background-position: center;
+	background-size: 200px;
+	height: 200px;
+	width: 200px;
+}
+
 .past-members-section {
 	padding-top: 20px;
 	padding-left: 20px;
 	margin-left: 20px;
 	/*border-bottom: 1px solid grey;*/
-	height: 100px;
+	/*height: 100px;*/
 	width: 495px;
 	display: inline-block;
 	float: left;
