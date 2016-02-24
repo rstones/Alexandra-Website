@@ -121,6 +121,10 @@ header {
 	width: 100%;/*1000px;*/
 	height: 30px;
 	background-color: rgb(0,100,170);
+	background: -webkit-linear-gradient(#0064AA, #3D8DC4);
+	background: -o-linear-gradient(#0064AA, #3D8DC4);
+	background: -moz-linear-gradient(#0064AA, #3D8DC4);
+	background: linear-gradient(#0064AA, #3D8DC4);
 	position: absolute;
 	top: 149px;
 	border-top: 1px solid rgb(0,100,170);
@@ -239,11 +243,16 @@ nav li:hover {
 }
 
 .sidebar-section {
-	padding: 20px 10px 0px 0px;
+	padding: 20px 10px 20px 0px;
+	margin-bottom: 20px;
 }
 
 .sidebar-section-header {
 	background-color: rgb(0,100,170);
+	background: -webkit-linear-gradient(#0064AA, #3D8DC4);
+	background: -o-linear-gradient(#0064AA, #3D8DC4);
+	background: -moz-linear-gradient(#0064AA, #3D8DC4);
+	background: linear-gradient(#0064AA, #3D8DC4);
 	color: white;
 	margin: 0px 0px 20px 0px;
 	padding: 5px 5px 5px 10px;
@@ -375,13 +384,13 @@ h4 {
 }
 
 #alexandra-image {
-	background: url('../media/alexandra-photo.jpg');
+	background: url('../media/alexandra-photo2-scaled.jpg');
 	/*background-size: 200px 300px;*/
 	background-repeat: no-repeat;	
 	background-position: center;
-	background-size: 200px;
+	background-size: 250px;
 	height: 200px;
-	width: 200px;
+	width: 250px;
 }
 
 #francesca-image {
@@ -415,33 +424,53 @@ h4 {
 }
 
 #david-image {
-	background: url('../media/david-photo.jpg');
+	background: url('../media/david-photo2-scaled.jpg');
 	/*background-size: 200px 300px;*/
 	background-repeat: no-repeat;	
 	background-position: center;
-	background-size: 200px;
+	background-size: 250px;
 	height: 200px;
-	width: 200px;
+	width: 250px;
 }
 
 #richard-image {
-	background: url('../media/richard-photo.jpg');
+	background: url('../media/richard-photo2-scaled.jpg');
 	/*background-size: 200px 300px;*/
 	background-repeat: no-repeat;	
 	background-position: center;
-	background-size: 200px;
+	background-size: 250px;
 	height: 200px;
-	width: 200px;
+	width: 250px;
 }
 
 #valentina-image {
-	background: url('../media/valentina-photo.jpg');
+	background: url('../media/valentina-photo2-scaled.jpg');
 	/*background-size: 200px 300px;*/
 	background-repeat: no-repeat;	
 	background-position: center;
-	background-size: 200px;
+	background-size: 250px;
 	height: 200px;
-	width: 200px;
+	width: 250px;
+}
+
+#giuseppe-image {
+	background: url('../media/giuseppe-photo-scaled.jpg');
+	/*background-size: 200px 300px;*/
+	background-repeat: no-repeat;	
+	background-position: center;
+	background-size: 250px;
+	height: 200px;
+	width: 250px;
+}
+
+#stefan-image {
+	background: url('../media/stefan-photo-scaled.jpg');
+	/*background-size: 200px 300px;*/
+	background-repeat: no-repeat;	
+	background-position: center;
+	background-size: 250px;
+	height: 200px;
+	width: 250px;
 }
 
 #missing-photo-image {
@@ -449,9 +478,9 @@ h4 {
 	/*background-size: 200px 300px;*/
 	background-repeat: no-repeat;	
 	background-position: center;
-	background-size: 200px;
+	background-size: 250px;
 	height: 200px;
-	width: 200px;
+	width: 250px;
 }
 
 .past-members-section {
