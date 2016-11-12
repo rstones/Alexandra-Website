@@ -14,8 +14,8 @@ insertNav = function(currentPage) {
 					'<a href="./members.html"><li>' +
 						'Members' + 
 					'</li></a>' +
-					'<a href="./news.html"><li>' +
-						'News' +
+					'<a href="./outreach.html"><li>' +
+						'Outreach' +
 					'</li></a>' +
 					'<a href="./aboutAOC.html"><li>' +
 						'About AOC' +
