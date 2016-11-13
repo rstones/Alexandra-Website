@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="scripts/style.css">
 		<script type="text/javascript" src="scripts/utils.js"></script>
 		<script type="text/javascript" src="scripts/twitterWidgets.js"></script>
+		<script type="text/javascript" src="scripts/slideshow.js"></script>
 		<title>Quantum Secrets of Photosynthesis | UCL</title>
 		<link rel="shortcut icon"
                   href="http://www.ucl.ac.uk/corporate-identity/++resource++images/favicon2.ico" />
@@ -41,104 +42,10 @@
 						<img class="outreach-slide-show w3-animate-fading" id="outreach-slide-show" src="media/outreach-ss-science-busking.jpg">
 						<img class="outreach-slide-show w3-animate-fading" id="outreach-slide-show" src="media/outreach-ss-stand.jpg">
 						<img class="outreach-slide-show w3-animate-fading" id="outreach-slide-show" src="media/outreach-ss-soiree.jpg">
-						<div class="ss-scroll ss-left-scroll" onclick="scrollBackward()">&#10094;</div>
-					    	<div class="ss-scroll ss-right-scroll" onclick="scrollForward()">&#10095;</div>
+						<div class="ss-scroll ss-left-scroll" onclick="slideshow.scrollBackward()">&#10094;</div>
+					    	<div class="ss-scroll ss-right-scroll" onclick="slideshow.scrollForward()">&#10095;</div>
 					</div>
-					<script>
-						var x = document.getElementsByClassName("outreach-slide-show");
-						for (var i = 1; i < x.length; i++) {
-					      		x[i].style.display = "none";
-					    	}
-						var prevSlideIndex = x.length-1;
-						var currentSlideIndex = 0;
-						var nextSlideIndex = 1;
-						var slideShowTimer;
-
-						function fadeIn(imgIdx, fadeTime, fadeInc) {
-							x[imgIdx].style.display = "block";
-							x[imgIdx].style.opacity = 0;
-							var op = 0.1;
-							var timer = setInterval(function(){
-								if (op>=1) {
-									clearInterval(timer);
-								}
-								x[imgIdx].style.opacity = op;
-								op += fadeInc;
-							}, fadeTime*fadeInc);
-						}
-
-						function fade(prevImgIdx, nextImgIdx, fadeTime, fadeInc) {
-							var op = 1.0;
-							var timer = setInterval(function(){
-								if (op<0.05) {
-									x[prevImgIdx].style.display = "none";
-									clearInterval(timer);
-									fadeIn(nextImgIdx, fadeTime/2.0, fadeInc);
-								}
-								x[prevImgIdx].style.opacity = op;
-								op -= fadeInc;
-							}, (fadeTime/2.0)*fadeInc);	
-						}
-
-						function imposeIndexBoundaries() {
-							if (nextSlideIndex > x.length-1) {
-								nextSlideIndex = 0;
-							} else if (nextSlideIndex < 0) {
-								nextSlideIndex = x.length-1;
-							}
-							if (currentSlideIndex > x.length-1) {
-								currentSlideIndex = 0;
-							} else if (currentSlideIndex < 0) {
-								currentSlideIndex = x.length-1;
-							}
-							if (prevSlideIndex > x.length-1) {
-								prevSlideIndex = 0;
-							} else if (prevSlideIndex < 0) {
-								prevSlideIndex = x.length-1;
-							}
-						}
-
-						function forward() {
-							imposeIndexBoundaries();
-						    	fade(currentSlideIndex, nextSlideIndex, 1000, 0.01);
-						    	nextSlideIndex++; currentSlideIndex++; prevSlideIndex++;
-						}
-
-						function backward() {
-							imposeIndexBoundaries();
-						    	fade(currentSlideIndex, prevSlideIndex, 1000, 0.01);
-						    	nextSlideIndex--; currentSlideIndex--; prevSlideIndex--;
-						}
-
-						function startSlideShow() {
-							slideShowTimer = setInterval(function() {
-								forward();
-							} , 6000);
-						}
-
-						function stopSlideShow() {
-							clearInterval(slideShowTimer);
-						}
-						
-						// this is not backwards compatible with old browsers, need to sort this
-						window.addEventListener('focus', startSlideShow);    
-						window.addEventListener('blur', stopSlideShow);
-
-						function scrollForward() {
-							stopSlideShow();
-							forward();
-						}
-
-						function scrollBackward() {
-							stopSlideShow();
-							backward();
-						}
-					</script>
-					<!--In the initial stages of photosynthesis, energy is captured from sunlight by specialised molecules called chromophores,
-					which form light harvesting antennae inside the cells of photosynthetic organisms. These antennae absorb photons and 
-					then transfer the energy to a reaction centre where it can be converted to a chemically reactive state. It turns out 
-					that the capture and transfer of energy are enhanced by three weird quantum secrets to help make the most of the energy
-					available. Check out our video below to find out more...-->
+					<script>slideshow.initializeSlideshow()</script>
 					<div class="clear"></div>
 					<br>
 					<iframe id="qsop-youtube-vid" width="640" height="360"
