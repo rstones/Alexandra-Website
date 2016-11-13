@@ -393,5 +393,25 @@
 		"Year": "2014",
 		"Publisher": "",
 		"Link": "http://pubs.rsc.org/en/Content/ArticleLanding/2014/CP/C4CP01477D"
+	},{
+		"Authors": "Hossein-Nejad, H.; O'Reilly, E.J.; Olaya-Castro, A.;",
+		"Title": "Work, heat and entropy production in bipartite quantum systems",
+		"Publication": "New Journal of Physics",
+		"Volume": "17",
+		"Number": "1",
+		"Pages": "075014",
+		"Year": "2015",
+		"Publisher": "",
+		"Link": "http://iopscience.iop.org/article/10.1088/1367-2630/17/7/075014"
+	},{
+		"Authors": "Holdaway, D.I.H.; Collini, E.; Olaya-Castro, A.;",
+		"Title": "Coherence specific signal detection via chiral pump-probe spectroscopy",
+		"Publication": "The Journal of Chemical Physics",
+		"Volume": "144",
+		"Number": "19",
+		"Pages": "194112",
+		"Year": "2016",
+		"Publisher": "",
+		"Link": "http://scitation.aip.org/content/aip/journal/jcp/144/19/10.1063/1.4948943"
 	}
 ]

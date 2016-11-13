@@ -99,18 +99,12 @@
 						}
 
 						function forward() {
-							//if (nextSlideIndex > x.length-1) {nextSlideIndex = 0;} else if (nextSlideIndex < 0) {
-							//if (currentSlideIndex > x.length-1) {currentSlideIndex = 0;}
-							//if (prevSlideIndex > x.length-1) {prevSlideIndex = 0;}
 							imposeIndexBoundaries();
 						    	fade(currentSlideIndex, nextSlideIndex, 1000, 0.01);
 						    	nextSlideIndex++; currentSlideIndex++; prevSlideIndex++;
 						}
 
 						function backward() {
-							//if (nextSlideIndex < 0) {nextSlideIndex = x.length-1;}
-							//if (currentSlideIndex < 0) {currentSlideIndex = x.length-1;}
-							//if (prevSlideIndex < 0) {prevSlideIndex = x.length-1;}
 							imposeIndexBoundaries();
 						    	fade(currentSlideIndex, prevSlideIndex, 1000, 0.01);
 						    	nextSlideIndex--; currentSlideIndex--; prevSlideIndex--;
@@ -132,13 +126,11 @@
 
 						function scrollForward() {
 							stopSlideShow();
-							//nextSlideIndex--; prevSlideIndex--;
 							forward();
 						}
 
 						function scrollBackward() {
 							stopSlideShow();
-							//nextSlideIndex++; prevSlideIndex++;
 							backward();
 						}
 					</script>
